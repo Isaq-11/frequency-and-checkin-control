@@ -17,6 +17,7 @@ class Sessao{
 
   Map<String, dynamic> toMap(){
     return {
+      'id': id,
       'titulo': titulo,
       'descricao': descricao,
       'local': local,
@@ -27,6 +28,7 @@ class Sessao{
 
   factory Sessao.fromMap(Map<String, dynamic> map){
     return Sessao(
+      id: map['id'],
       titulo: map['titulo'],
       descricao: map['descricao'],
       local: map['local'],

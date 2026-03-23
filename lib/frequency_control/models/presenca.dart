@@ -14,7 +14,7 @@ class Presenca{
     required this.sessaoId,
     required this.entrada,
     this.saida,
-    required this.status,
+    this.status = StatusPresenca.pendente,
   });
 
   Map<String, dynamic> toMap(){
@@ -36,7 +36,8 @@ class Presenca{
       entrada: DateTime.parse(map['entrada']),
       saida: map['saida'] != null ? DateTime.parse(map['saida']) : null,
       status: StatusPresenca.values.firstWhere(
-        (e) => e.name == map['status']
+        (e) => e.name == map['status'],
+        orElse: () => StatusPresenca.pendente,
       ),
     );
   }
