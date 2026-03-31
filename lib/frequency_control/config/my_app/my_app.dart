@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Controle de Frequência',
+      debugShowCheckedModeBanner: false,
       initialRoute: Rotas.telaInicial,
       routes: {
         Rotas.telaInicial: (context) => InicioScreen(),
