@@ -5,8 +5,11 @@ class CadastroSessaoScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cadastrar Sessão', style: TextStyle(color: Colors.white)),
+        title: Text(
+          'Cadastrar Sessão',
+        ),
         backgroundColor: const Color.fromARGB(255, 7, 32, 77),
+        foregroundColor: Colors.white,
       ),
     );
   }

@@ -7,9 +7,9 @@ class CadastroParticipanteScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           'Cadastrar Participante',
-          style: TextStyle(color: Colors.white),
         ),
         backgroundColor: const Color.fromARGB(255, 7, 32, 77),
+        foregroundColor: Colors.white,
       ),
     );
   }

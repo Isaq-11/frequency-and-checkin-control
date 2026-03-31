@@ -8,18 +8,23 @@ class TelaPrincipalTesteScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           'Gerenciar Presença em Eventos Acadêmicos',
-          style: TextStyle(color: Colors.white),
         ),
         backgroundColor: const Color.fromARGB(255, 7, 32, 77),
+        foregroundColor: Colors.white,
       ),
       backgroundColor: const Color.fromARGB(255, 53, 109, 214),
       body: Center(
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, Rotas.telaCadastroParticipante);
               },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color.fromARGB(255, 253, 192, 9),
+                foregroundColor: Colors.white,
+              ),
               child: Text('Cadastrar Participante'),
             ),
             SizedBox(height: 20),
