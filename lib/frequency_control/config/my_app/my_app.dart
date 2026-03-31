@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:frequency_control/frequency_control/config/routes/routes.dart';
 
-import 'package:frequency_control/frequency_control/screens/tela_principal_teste_screen.dart';
+import 'package:frequency_control/frequency_control/screens/inicio_screen.dart';
+import 'package:frequency_control/frequency_control/screens/principal_teste_screen.dart';
 import 'package:frequency_control/frequency_control/screens/cadastro_participante_screen.dart';
 import 'package:frequency_control/frequency_control/screens/cadastro_sessao_screen.dart';
 import 'package:frequency_control/frequency_control/screens/listagem_participantes_screen.dart';
@@ -14,7 +15,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Controle de Frequência',
+      initialRoute: Rotas.telaInicial,
       routes: {
+        Rotas.telaInicial: (context) => InicioScreen(),
         Rotas.telaPrincipalTeste: (context) => TelaPrincipalTesteScreen(),
         Rotas.telaCadastroParticipante: (context) =>
             CadastroParticipanteScreen(),

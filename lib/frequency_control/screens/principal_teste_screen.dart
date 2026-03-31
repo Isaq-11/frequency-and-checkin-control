@@ -5,7 +5,14 @@ class TelaPrincipalTesteScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Gerenciar Presença em Eventos Acadêmicos')),
+      appBar: AppBar(
+        title: Text(
+          'Gerenciar Presença em Eventos Acadêmicos',
+          style: TextStyle(color: Colors.white),
+        ),
+        backgroundColor: const Color.fromARGB(255, 7, 32, 77),
+      ),
+      backgroundColor: const Color.fromARGB(255, 53, 109, 214),
       body: Center(
         child: Column(
           children: [
