@@ -1,21 +1,44 @@
 import 'package:flutter/material.dart';
+import 'package:frequency_control/frequency_control/config/routes/routes.dart';
 
-class TelaPrincipalTesteScreen extends StatelessWidget{
-
+class TelaPrincipalTesteScreen extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Gerenciar Presença em Eventos Acadêmicos'),
-      ),
+      appBar: AppBar(title: Text('Gerenciar Presença em Eventos Acadêmicos')),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pushNamed(context, 'cadastro-participante');
-          },
-          child: Text('Cadastrar Participante'),
-        )
-      )
+        child: Column(
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, Rotas.telaCadastroParticipante);
+              },
+              child: Text('Cadastrar Participante'),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, Rotas.telaCadastroSessao);
+              },
+              child: Text('Cadastrar Sessão'),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, Rotas.telaListagemParticipantes);
+              },
+              child: Text('Listar Participantes'),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, Rotas.telaListagemSessoes);
+              },
+              child: Text('Listar Sessões'),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
