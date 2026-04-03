@@ -14,12 +14,25 @@ class InicioScreen extends StatelessWidget {
       ),
       backgroundColor: const Color.fromARGB(255, 53, 109, 214),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pushNamed(context, Rotas.telaPrincipalTeste);
-          },
-          child: Text('Iniciar'),
-        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, Rotas.telaLogin);
+              },
+              child: Text('Entrar com login')
+            ),
+            SizedBox(height: 20,),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, Rotas.telaVisitante);
+              },
+              child: Text('Entrar como visitante'),
+            ),
+          
+          ],
+        )
       ),
     );
   }

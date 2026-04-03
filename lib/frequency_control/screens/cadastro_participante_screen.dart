@@ -32,6 +32,12 @@ class _CadastroParticipanteScreenState extends State<CadastroParticipanteScreen>
                   hintText: 'Digite seu nome'
                 ),
               ),
+              TextFormField(
+                decoration: InputDecoration(
+                  label: Text('RA: '),
+                  hintText: 'Informe seu RA',
+                ),
+              ),
               DropdownButtonFormField<String>( 
                 value: cursoSelecionado,
                 decoration: InputDecoration(
@@ -72,11 +78,15 @@ class _CadastroParticipanteScreenState extends State<CadastroParticipanteScreen>
                     periodoSelecionado = value;
                   });
                 },
-              )
+              ),
+              ElevatedButton( 
+                onPressed: () => print('Salvo com Sucesso!'),
+                child: Text('Enviar'),
+              ),
             ],
           ),
-        )
-      )
+        ),
+      ),
     );
   }
 
