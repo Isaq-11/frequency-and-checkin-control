@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frequency_control/frequency_control/config/routes/routes.dart';
 
 
 class CadastroParticipanteScreen extends StatefulWidget{
@@ -80,7 +81,10 @@ class _CadastroParticipanteScreenState extends State<CadastroParticipanteScreen>
                 },
               ),
               ElevatedButton( 
-                onPressed: () => print('Salvo com Sucesso!'),
+                onPressed: () {
+                  print('Salvo com Sucesso!');
+                  Navigator.pushNamed(context, Rotas.telaPrincipalTeste);
+                },
                 child: Text('Enviar'),
               ),
             ],

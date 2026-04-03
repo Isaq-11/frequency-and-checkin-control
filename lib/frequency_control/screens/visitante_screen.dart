@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:frequency_control/frequency_control/screens/listagem_sessoes_screen.dart';
 import 'package:frequency_control/frequency_control/config/routes/routes.dart';
+
 
 class VisitanteScreen extends StatelessWidget{
 

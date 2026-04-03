@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:frequency_control/frequency_control/config/routes/routes.dart';
-import 'package:frequency_control/frequency_control/screens/principal_teste_screen.dart';
+
 
 class LoginScreen extends StatelessWidget {
 
