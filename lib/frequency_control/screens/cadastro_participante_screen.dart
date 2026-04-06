@@ -3,8 +3,11 @@ import 'package:frequency_control/frequency_control/config/routes/routes.dart';
 
 
 class CadastroParticipanteScreen extends StatefulWidget{
+
+  const CadastroParticipanteScreen({super.key});
+
   @override
-  _CadastroParticipanteScreenState createState() =>_CadastroParticipanteScreenState();
+  State<CadastroParticipanteScreen> createState() => _CadastroParticipanteScreenState();
 }
 
 class _CadastroParticipanteScreenState extends State<CadastroParticipanteScreen>{
@@ -13,7 +16,6 @@ class _CadastroParticipanteScreenState extends State<CadastroParticipanteScreen>
 
 
   @override
-
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
