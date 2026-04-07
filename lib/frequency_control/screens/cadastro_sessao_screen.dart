@@ -70,6 +70,18 @@ class _CadastroSessaoScreenState extends State<CadastroSessaoScreen> {
                         child: Text('Cadastrar'),
                       ),
                     ),
+                    SizedBox(width: 10),
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.pushNamed(
+                            context,
+                            Rotas.telaListagemSessoes,
+                          );
+                        },
+                        child: Text('Listar'),
+                      ),
+                    ),
                   ],
                 ),
               ],

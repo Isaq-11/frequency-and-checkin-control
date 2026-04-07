@@ -112,7 +112,7 @@ class _CadastroParticipanteScreenState
                             periodoSelecionado = null;
                           });
                         },
-                        child: Text('Enviar'),
+                        child: Text('Cadastrar'),
                       ),
                     ),
                     SizedBox(width: 10),
@@ -124,7 +124,7 @@ class _CadastroParticipanteScreenState
                             Rotas.telaListagemParticipantes,
                           );
                         },
-                        child: Text('Lista'),
+                        child: Text('Listar'),
                       ),
                     ),
                   ],
