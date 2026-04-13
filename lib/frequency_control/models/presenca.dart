@@ -2,19 +2,19 @@ import '../enums/status_presenca.dart';
 
 class Presenca{
   int? id;
-  int participanteId;
-  int sessaoId;
-  DateTime entrada;
-  DateTime? saida;
-  StatusPresenca status;
+  var participanteId;
+  var sessaoId;
+  // DateTime entrada;
+  // DateTime? saida;
+  // StatusPresenca status;
 
   Presenca({
     this.id,
     required this.participanteId,
     required this.sessaoId,
-    required this.entrada,
-    this.saida,
-    this.status = StatusPresenca.pendente,
+    // required this.entrada,
+    // this.saida,
+    // this.status = StatusPresenca.pendente,
   });
 
   Map<String, dynamic> toMap(){
@@ -22,9 +22,9 @@ class Presenca{
       'id': id,
       'participanteId': participanteId,
       'sessaoId': sessaoId,
-      'entrada': entrada.toIso8601String(),
-      'saida': saida?.toIso8601String(),
-      'status': status.name,
+      // 'entrada': entrada.toIso8601String(),
+      // 'saida': saida?.toIso8601String(),
+      // 'status': status.name,
     };
   }
 
@@ -33,12 +33,12 @@ class Presenca{
       id: map['id'],
       participanteId: map['participanteId'],
       sessaoId: map['sessaoId'],
-      entrada: DateTime.parse(map['entrada']),
-      saida: map['saida'] != null ? DateTime.parse(map['saida']) : null,
-      status: StatusPresenca.values.firstWhere(
-        (e) => e.name == map['status'],
-        orElse: () => StatusPresenca.pendente,
-      ),
+      // entrada: DateTime.parse(map['entrada']),
+      // saida: map['saida'] != null ? DateTime.parse(map['saida']) : null,
+      // status: StatusPresenca.values.firstWhere(
+      //   (e) => e.name == map['status'],
+      //   orElse: () => StatusPresenca.pendente,
+      // ),
     );
   }
 }

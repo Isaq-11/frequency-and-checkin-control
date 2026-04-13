@@ -19,6 +19,13 @@ class _CadastroParticipanteScreenState
   String? cursoSelecionado;
   int? periodoSelecionado;
 
+  @override 
+  void dispose() {
+    nomeController.dispose();
+    raController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

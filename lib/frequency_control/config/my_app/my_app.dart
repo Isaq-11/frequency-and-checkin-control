@@ -9,6 +9,7 @@ import 'package:frequency_control/frequency_control/screens/cadastro_sessao_scre
 import 'package:frequency_control/frequency_control/screens/listagem_participantes_screen.dart';
 import 'package:frequency_control/frequency_control/screens/listagem_sessoes_screen.dart';
 import 'package:frequency_control/frequency_control/screens/visitante_screen.dart';
+import 'package:frequency_control/frequency_control/screens/participantes_das_sessoes_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
             ListagemParticipantesScreen(),
         Rotas.telaListagemSessoes: (context) => ListagemSessoesScreen(),
         Rotas.telaVisitante: (context) => VisitanteScreen(),
+        // Rotas.telaParticipantesDasSessoes: (context) => ParticipantesDasSessoesScreen(),
       },
     );
   }

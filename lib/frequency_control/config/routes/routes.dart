@@ -7,4 +7,5 @@ class Rotas {
   static const String telaListagemSessoes = 'listagem-sessoes';
   static const String telaLogin = 'tela-login';
   static const String telaVisitante = 'tela-visitante';
+  static const String telaParticipantesDasSessoes= 'tela-participantes-das-sessoes';
 }
