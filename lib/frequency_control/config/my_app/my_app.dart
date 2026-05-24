@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:frequency_control/frequency_control/config/routes/routes.dart';
+import 'package:frequency_control/frequency_control/screens/cadastro_palestrante_screen.dart';
 
 import 'package:frequency_control/frequency_control/screens/inicio_screen.dart';
 import 'package:frequency_control/frequency_control/screens/login_screen.dart';
@@ -26,6 +27,8 @@ class MyApp extends StatelessWidget {
         Rotas.telaPrincipalTeste: (context) => TelaPrincipalTesteScreen(),
         Rotas.telaCadastroParticipante: (context) =>
             CadastroParticipanteScreen(),
+        Rotas.telaCadastroPalestrante: (context) =>
+        CadastroPalestranteScreen(),
         Rotas.telaCadastroSessao: (context) => CadastroSessaoScreen(),
         Rotas.telaListagemParticipantes: (context) =>
             ListagemParticipantesScreen(),
