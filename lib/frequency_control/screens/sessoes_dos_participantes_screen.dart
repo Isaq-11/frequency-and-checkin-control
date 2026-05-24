@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:frequency_control/frequency_control/models/dados.dart';
-import 'package:frequency_control/frequency_control/models/presenca.dart';
+import 'package:frequency_control/frequency_control/models/participante_sessao.dart';
 import 'package:frequency_control/frequency_control/models/participante.dart';
 
 class SessoesDosParticipantesScreen extends StatefulWidget {
@@ -17,7 +17,7 @@ class SessoesDosParticipantesScreen extends StatefulWidget {
 
 class _SessoesDosParticipantesState extends State<SessoesDosParticipantesScreen> {
 
-  List<Presenca> get presencaDaSessao {
+  List<ParticipanteSessao> get presencaDaSessao {
     return listaPresencas.where((p) => p.participanteId == widget.participante).toList();
   }
 

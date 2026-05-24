@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:frequency_control/frequency_control/models/dados.dart';
 import 'package:frequency_control/frequency_control/config/routes/routes.dart';
-import 'package:frequency_control/frequency_control/models/presenca.dart';
+import 'package:frequency_control/frequency_control/models/participante_sessao.dart';
 import 'package:frequency_control/frequency_control/screens/listagem_participantes_screen.dart';
 import 'package:frequency_control/frequency_control/screens/participantes_das_sessoes_screen.dart';
 
@@ -56,7 +56,7 @@ class ListagemSessoesScreen extends StatelessWidget {
 
                                 if(participante == null) return;
 
-                                final presenca = Presenca(
+                                final presenca = ParticipanteSessao(
                                   participanteId: participante,
                                   sessaoId: sessao,
                                 );

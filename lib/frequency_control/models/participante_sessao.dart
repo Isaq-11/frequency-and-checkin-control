@@ -1,6 +1,6 @@
 import '../enums/status_presenca.dart';
 
-class Presenca{
+class ParticipanteSessao{
   int? id;
   var participanteId;
   var sessaoId;
@@ -8,7 +8,7 @@ class Presenca{
   // DateTime? saida;
   // StatusPresenca status;
 
-  Presenca({
+  ParticipanteSessao({
     this.id,
     required this.participanteId,
     required this.sessaoId,
@@ -20,16 +20,16 @@ class Presenca{
   Map<String, dynamic> toMap(){
     return{
       'id': id,
-      'participanteId': participanteId,
-      'sessaoId': sessaoId,
+      'participante_id': participanteId,
+      'sessao_id': sessaoId,
       // 'entrada': entrada.toIso8601String(),
       // 'saida': saida?.toIso8601String(),
       // 'status': status.name,
     };
   }
 
-  factory Presenca.fromMap(Map<String, dynamic> map){
-    return Presenca(
+  factory ParticipanteSessao.fromMap(Map<String, dynamic> map){
+    return ParticipanteSessao(
       id: map['id'],
       participanteId: map['participanteId'],
       sessaoId: map['sessaoId'],
